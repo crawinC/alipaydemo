@@ -11,28 +11,25 @@ package cn.crawin.config;
  */
 
 public class AlipayConfig {
-	
-//↓↓↓↓↓↓↓↓↓↓请在这里配置您的基本信息↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
 	// 合作身份者ID，签约账号，以2088开头由16位纯数字组成的字符串，查看地址：https://b.alipay.com/order/pidAndKey.htm
 	// 2016120303801456    2088521386712296
-	public static String partner = "2016120303801456";
+	public static String partner = "2088521386712296";
 	
 	// 收款支付宝账号，以2088开头由16位纯数字组成的字符串，一般情况下收款账号就是签约账号
 	public static String seller_user_id = partner;
 
 	// 商户的私钥,需要PKCS8格式，RSA公私钥生成：https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.nBDxfy&treeId=58&articleId=103242&docType=1
-	public static String private_key = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAKjDJbRHJYqRiNeuTHcdrdbZf42mhZKSqR26KcPMo6YpNN/j6LE5Grl86KW52+d9CAY49Layf31SfqUyvGfDNz7jKZtPZR1K3/Xx8GBpOPE95q2UdIusP885JG8DsaYBdITMUgkcHRBY+yolE3XiD71+VJ3gKeuOWiFTmwUPY1jPAgMBAAECgYActu+gaAakODUPdbG/BsbAasuAP5g0o02xKC7ZCOXDbPl5Kt854FyCuRUgtaoMDkMiQ+ineWGl4jZ4R1S1Vwr8Gob/AI7W8ZmefKj1GfByPc6YZ9opkuJXAZpDWgwVSihEnBqBFIMYH3tzjVjmTvJy7nLaKIqNCQ3LBfULiSjYOQJBANbujVVyuJX7apI4PulmdYgbYXMlMuIjVuYkJ3AvHVhqSecEzIZXxgFMuc7+6vNet+da5IHsGKp/51wWi32IAuUCQQDJAjMQJoS+zClWr81/+GevcEnkmNjkSOsdC2pCC+GdjGHG/r2PdA1I+bFnFNlb6AIOf2RkoWCphWtatzMndm2jAkEAsgsg1wTWdZ+0U3X2X3/5oosT+b953CxsIu8WIG9W/tPlblLiXfM92fvF+/vdg0cWTrdTjXCXqj2T2Qvv90gBJQJAFJucHpjEXUdTKacGe4s9Hhh2CvC8s9Lh/+1OrIzJSby9vYgaaR2tywCGdpoFms2TgGcBJOwCm/6ovfkwTmhu3wJAdlrVaoSoLmksxO3PWunqDcmyAPKMNIhjzVX4uWINCFqrrLZZkL02PawCLcdJgQGVVmEthZ9DAdDNv509zNXnJA==";
-	/*public static String private_key = "1mtvr2ttrv8avd3ipcoelfxc91kf0w5y";*/
+	public static String private_key = "";
 	
 	// 支付宝公钥,查看地址：https://b.alipay.com/order/pidAndKey.htm 
-	public static String alipay_public_key  = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDI6d306Q8fIfCOaTXyiUeJHkrIvYISRcc73s3vF1ZT7XN8RNPwJxo8pWaJMmvyTn9N4HQ632qJBVHf8sxHi/fEsraprwCtzvzQETrNRwVxLO5jVmRGi60j8Ue1efIlzPXV9je9mkjzOmdssymZkh2QhUrCmZYI/FCEa3/cNMW0QIDAQAB";
+	public static String alipay_public_key  = "";
 
 	// 服务器异步通知页面路径  需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
-	public static String notify_url = "http://139.224.221.143:8080/qsvc-front/notify_url.jsp";
+	public static String notify_url = "访问路径";
 
 	// 页面跳转同步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
-	public static String return_url = "http://139.224.221.143:8080/qsvc-front/return_url.jsp";
+	public static String return_url = "访问路径";
 
 	// 签名方式
 	public static String sign_type = "RSA";
